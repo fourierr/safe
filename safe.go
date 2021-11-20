@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"sync"
 	"github.com/sirupsen/logrus"
+	"runtime/debug"
 )
 
 type Group struct {
