@@ -2,7 +2,6 @@ package safe
 
 import (
 	"context"
-	"fmt"
 	"sync"
 	"github.com/sirupsen/logrus"
 	"runtime/debug"
