@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"sync"
+	"github.com/sirupsen/logrus"
 )
 
 type Group struct {
@@ -31,7 +32,8 @@ func (g *Group) Go(f func() error) {
 	go func() {
 		defer func() {
 			if err := recover(); err != nil {
-				fmt.Println("panic recover ", err)
+				logrus.Infof("Panic Recover(%s)",err)
+				fmt.Println(string(debug.Stack()))
 			}
 		}()
 		defer g.wg.Done()
@@ -50,7 +52,8 @@ func Go(f func()) {
 	go func() {
 		defer func() {
 			if err := recover(); err != nil {
-				fmt.Println("panic recover ", err)
+				logrus.Infof("Panic Recover(%s)",err)
+				fmt.Println(string(debug.Stack()))
 			}
 		}()
 		f()
