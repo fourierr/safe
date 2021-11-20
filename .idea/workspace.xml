@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12dda0c5-3e17-4e56-9a66-8d0e0c790130" name="Default Changelist" comment="v0.0.5">
+    <list default="true" id="12dda0c5-3e17-4e56-9a66-8d0e0c790130" name="Default Changelist" comment="v0.0.6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/safe.go" beforeDir="false" afterPath="$PROJECT_DIR$/safe.go" afterDir="false" />
     </list>
@@ -58,7 +58,8 @@
     <MESSAGE value="v0.0.3" />
     <MESSAGE value="v0.0.4" />
     <MESSAGE value="v0.0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.0.5" />
+    <MESSAGE value="v0.0.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.0.6" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

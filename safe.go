@@ -34,7 +34,7 @@ func (g *Group) Go(f func() error) {
 		defer func() {
 			if err := recover(); err != nil {
 				logrus.Infof("Panic Recover(%s)",err)
-				fmt.Println(string(debug.Stack()))
+				debug.PrintStack()
 			}
 		}()
 		defer g.wg.Done()
@@ -54,7 +54,7 @@ func Go(f func()) {
 		defer func() {
 			if err := recover(); err != nil {
 				logrus.Infof("Panic Recover(%s)",err)
-				fmt.Println(string(debug.Stack()))
+				debug.PrintStack()
 			}
 		}()
 		f()
